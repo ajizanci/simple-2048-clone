@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>2048</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="state">
+        <div id="game-start">
+          <p>Start Game</p>
+          <button type="button" id="start" name="button">Start</button>
+        </div>
+        <div class="hidden" id="game-over">
+          <p>Game Over,<br>
+            You <span></span>.
+          </p>
+          <button id="restart" type="button" name="button">New Game</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="grid.js" charset="utf-8"></script>
+    <script src="game-class.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

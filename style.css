@@ -1,0 +1,139 @@
+body {
+  background-color: rgb(241, 239, 239);
+}
+
+#container {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+  position: absolute;
+  top: calc(50% - 125px);
+  left: calc(50% - 125px);
+}
+
+#container #state {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#container #state #game-over{
+  text-align: center;
+}
+
+#game-over p, #game-start p {
+  color: white;
+  font-size: 16pt;
+  font-weight: bold;
+  line-height: 40px;
+  text-shadow: 0px 0px 5px black;
+}
+
+#game-start p {
+  font-size: 20pt;
+  text-align: center;
+  line-height: 50px;
+}
+
+span.lost, span.won {
+  text-transform: uppercase;
+}
+
+span.lost {
+  color: #fd2f2ffc;
+}
+
+span.won {
+  color: #28f928;
+}
+
+#start, #restart {
+  display: block;
+  width: 40%;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: 12pt;
+  color: white;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 30%;
+  border-width: 0px;
+  outline-width: 0px;
+}
+
+#start {
+  box-shadow: 0px 0px 15px black,
+              inset 0px 0px 5px green;
+  text-shadow: 0px 0px 3px green;
+  background-color: #28f928;
+}
+
+#restart {
+  box-shadow: 0px 0px 15px black,
+              inset 0px 0px 5px blue;
+  text-shadow: 0px 0px 3px blue;
+  background-color: #008cff;
+}
+
+#restart {
+  width: 50%;
+  left: 25%;
+}
+
+#grid {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(155, 118, 83);
+  border-collapse: separate;
+  border-spacing: 5px 5px;
+  border-radius: 5px;
+}
+
+#grid td {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(183, 146, 104);
+  border-radius: 5px;
+  color: white;
+  font-family: Calibri;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14pt;
+}
+
+#grid td.cell-2, #grid td.cell-4 {
+  color: rgb(155, 118, 83);
+}
+
+#grid td.cell-2 {
+  background-color: #f2eecb;
+}
+
+#grid td.cell-4 {
+  background-color: #f8e8a6;
+}
+
+#grid td.cell-8 {
+  background-color: #edba8f;
+}
+
+#grid td.cell-16 {
+  background-color: #ffa07a;
+}
+
+#grid td.cell-32 {
+  background-color: #fa8072;
+}
+
+#grid td.cell-64 {
+  background-color: #f75a5a;
+}
+.hidden {
+  display: none;
+}
