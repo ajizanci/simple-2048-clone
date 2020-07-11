@@ -1,4 +1,14 @@
-class Grid2048 {
+import {
+  generateMatrix,
+  createGrid,
+  merge,
+  hasRepeatedElement,
+  getFreeCells,
+  getRandomElementOfArray,
+  getRandomPowerofTwo } from './grid';
+
+export default class Grid2048 {
+
   constructor(size, container) {
     this.matrix = generateMatrix(size);
     this.size = size;

@@ -1,4 +1,4 @@
-function createGrid(matrix) {
+export function createGrid(matrix) {
   const table = document.createElement('table');
   table.setAttribute("id", "grid");
 
@@ -18,7 +18,7 @@ function createGrid(matrix) {
   return table;
 }
 
-function generateMatrix(size) {
+export function generateMatrix(size) {
   const matrix = [];
   for (let i = 0; i < size; i++) {
     matrix.push([]);
@@ -29,7 +29,7 @@ function generateMatrix(size) {
   return matrix;
 }
 
-function hasRepeatedElement(row) {
+export function hasRepeatedElement(row) {
   let test = [row[0], 0, false];
   for (let i = 1; i < row.length; i++) {
     if (row[i] == test[0] && i == (test[1] + 1)) {
@@ -44,7 +44,7 @@ function hasRepeatedElement(row) {
   return test[2];
 }
 
-function merge(matrix, direction) {
+export function merge(matrix, direction) {
   if (direction == 'l' || direction == 'r') {
     return matrix.map(collapse(direction));
   }
@@ -97,16 +97,16 @@ function transpose(matrix) {
   return res;
 }
 
-function getRandomPowerofTwo() {
+export function getRandomPowerofTwo() {
   const powers = [2, 4, 8];
   return getRandomElementOfArray(powers);
 }
 
-function getRandomElementOfArray(arr) {
+export function getRandomElementOfArray(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-function getFreeCells(matrix) {
+export function getFreeCells(matrix) {
   let freeCells = [];
 
   for (let i = 0, n = matrix.length; i < n; i++) {
