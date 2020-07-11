@@ -5,7 +5,8 @@ import {
   hasRepeatedElement,
   getFreeCells,
   getRandomElementOfArray,
-  getRandomPowerofTwo } from './grid';
+  getRandomPowerofTwo,
+  transpose } from './grid';
 
 export default class Grid2048 {
 

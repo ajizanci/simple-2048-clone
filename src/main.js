@@ -2,8 +2,9 @@ import Grid2048 from './game-class'
 import './css/style.css'
 
 const start = document.getElementById("start"),
-      restart = document.getElementById("restart"),
-      game = new Grid2048(4, document.getElementById("container"));
+      restart = document.getElementById("restart");
+
+const game = new Grid2048(4, document.getElementById('container'));
 
 start.addEventListener("click", () => game.start());
 restart.addEventListener("click", () => game.restart());

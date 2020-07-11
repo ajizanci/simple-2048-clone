@@ -1,4 +1,5 @@
 export function createGrid(matrix) {
+  console.log("CreateGrid called")
   const table = document.createElement('table');
   table.setAttribute("id", "grid");
 
@@ -83,7 +84,7 @@ function shift(row) {
   return shifted;
 }
 
-function transpose(matrix) {
+export function transpose(matrix) {
   let res = [];
   for (let i = 0, n = matrix[0].length; i < n; i++)
     res.push([]);
